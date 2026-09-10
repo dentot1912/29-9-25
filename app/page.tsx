@@ -970,7 +970,7 @@ function LetterSection() {
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       animation: phase === 'closed' ? 'pulseGlow 2.5s ease-in-out infinite' : 'none',
                     }}>
-                      <MiniLilyFlower size={36} />
+                      <Mail size={30} style={{ color: '#fff' }} />
                     </div>
                   </div>
                 </div>
