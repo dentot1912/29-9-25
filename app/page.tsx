@@ -542,8 +542,7 @@ function HeroSection({ onCelebrate, active = false }: { onCelebrate: () => void;
             maxWidth: 420, marginBottom: 32,
             fontFamily: SANS,
           }}>
-            Di hari yang paling istimewa ini, terima kasih telah hadir dan mewarnai duniaku dengan tawa serta cintamu.
-            Semoga setiap langkahmu selalu dipenuhi kebahagiaan bersamaku.
+            di hari yang paling istimewa ini,makasih udah hadir dan mewarnai hidup aku dengan tawa kamu serta cintanya kamu. semoga setiap langkah kamu selalu dipenuhi kebahagiaan sama aku
           </p>
 
           <div data-h="btns" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
