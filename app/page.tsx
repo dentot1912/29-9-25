@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
    ═══════════════════════════════════════════════════════════════════════════ */
 const BIRTHDAY_DATE = new Date('2026-07-03T00:00:00');
 const NAME = 'Sayang';
-const SENDER_NAME = 'Aku ❤️';
+const SENDER_NAME = 'Rezkha ❤️';
 
 /* ── Colors ── */
 const C = {
@@ -542,7 +542,7 @@ function HeroSection({ onCelebrate, active = false }: { onCelebrate: () => void;
             maxWidth: 420, marginBottom: 32,
             fontFamily: SANS,
           }}>
-            di hari yang paling istimewa ini,makasih udah hadir dan mewarnai hidup aku dengan tawa kamu serta cintanya kamu. semoga setiap langkah kamu selalu dipenuhi kebahagiaan sama aku
+            Di hari yang paling istimewa ini,makasih udah hadir dan mewarnai hidup aku dengan tawa kamu serta cintanya kamu. semoga setiap langkah kamu selalu dipenuhi kebahagiaan sama aku
           </p>
 
           <div data-h="btns" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
@@ -1047,7 +1047,7 @@ function LetterSection() {
                 <div data-letter-line style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
                   <Flower2 size={18} style={{ color: C.blush }} />
                   <p style={{ fontSize: 16, fontWeight: 600, fontFamily: SERIF, fontStyle: 'italic', color: C.blushD }}>
-                    Selamat Ulang Tahun, Sayangku! ❤️
+                    Selamat Ulang Tahun, Rania Sayangku! ❤️
                   </p>
                 </div>
 
