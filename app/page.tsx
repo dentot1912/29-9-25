@@ -73,13 +73,7 @@ const WISHES = [
   { Icon: Zap, title: 'Ketegaran Hati', text: 'Semoga kamu selalu dilimpahi ketabahan dan kekuatan saat menghadapi hari-hari yang berat.' },
   { Icon: Sparkles, title: 'Versi Terbaik Dirimu', text: 'Semoga kamu terus tumbuh menjadi sosok bidadari yang semakin anggun dan membanggakan.' },
   { Icon: Flower2, title: 'Berkah untuk Keluarga', text: 'Semoga keluargamu senantiasa diberikan kesehatan, kebahagiaan, dan limpahan rezeki.' },
-  { Icon: Gem, title: 'Selalu Merasa Berharga', text: 'Jangan pernah lupa bahwa kamu adalah anugerah terindah dan sangat berarti bagiku.' },
-  { Icon: Smile, title: 'Dikelilingi Kebaikan', text: 'Semoga kamu selalu dipertemukan dengan orang-orang baik dan penuh ketulusan.' },
-  { Icon: Moon, title: 'Hati yang Terjaga', text: 'Semoga hatimu selalu terjaga dari hal-hal yang dapat melukai dan meredupkan senyumanmu.' },
-  { Icon: Camera, title: 'Momen Indah Abadi', text: 'Semoga kita terus mengukir ribuan kenangan manis yang akan kita kenang bersama selamanya.' },
-  { Icon: Sparkles, title: 'Harapan & Semangat', text: 'Semoga hari-harimu selalu diwarnai antusiasme, harapan baru, dan kehangatan cinta.' },
-  { Icon: Gift, title: 'Kejutan Berkah Terindah', text: 'Semoga di usia 24 tahun ini, hidupmu dihujani kejutan-kejutan manis yang membahagiakan.' },
-  { Icon: Crown, title: 'Doa ke-24: Bersama Selamanya', text: 'Dan untuk doa ke-24, semoga semua harapan sucimu terwujud dan kita selalu bersama merajut cinta hingga ke surga-Nya.' },
+  { Icon: Gem, title: 'Selalu Merasa Berharga', text: 'Jangan pernah lupa bahwa kamu adalah anugerah terindah dan sangat berarti bagiku.' }
 ];
 
 const MEMORIES = [
@@ -1404,9 +1398,9 @@ function WishesSection() {
             <div style={{ width: 34, height: 1.5, background: C.gold }} />
             <MiniLilyFlower size={28} />
           </div>
-          <SectionTitle center>24 Doa & Harapan Cinta</SectionTitle>
+          <SectionTitle center>18 Doa & Harapan Cinta</SectionTitle>
           <p style={{ marginTop: 14, fontSize: 15, color: C.textM, fontFamily: SANS, maxWidth: 520, margin: '14px auto 0', lineHeight: 1.6 }}>
-            Spesial di hari ulang tahunmu yang ke-24, ini 24 untaian doa dan harapan tulusku untukmu, sayang:
+            Spesial di hari ulang tahunmu yang ke-18, ini 18 untaian doa dan harapan tulusku untukmu, sayang:
           </p>
         </div>
 
@@ -3106,6 +3100,96 @@ export default function BirthdayPage() {
       )}
 
       <Confetti active={confetti} />
+
+      {/* 🌸 Ambient Warm Glowing Bokeh & Light Orbs */}
+      <div style={{ position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 0, overflow: 'hidden' }}>
+        {/* Soft floating glow 1 - Top Left Blush */}
+        <div style={{
+          position: 'absolute',
+          top: '-5%',
+          left: '-5%',
+          width: '55vw',
+          height: '55vw',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(245, 213, 213, 0.42) 0%, rgba(245, 213, 213, 0.08) 55%, transparent 70%)',
+          filter: 'blur(50px)',
+          animation: 'bgFloatDrift1 22s ease-in-out infinite',
+        }} />
+
+        {/* Soft floating glow 2 - Top Right Gold */}
+        <div style={{
+          position: 'absolute',
+          top: '12%',
+          right: '-8%',
+          width: '48vw',
+          height: '48vw',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(230, 207, 160, 0.38) 0%, rgba(230, 207, 160, 0.06) 60%, transparent 75%)',
+          filter: 'blur(60px)',
+          animation: 'bgFloatDrift2 26s ease-in-out infinite',
+        }} />
+
+        {/* Soft floating glow 3 - Middle Sage/Rose Glow */}
+        <div style={{
+          position: 'absolute',
+          top: '48%',
+          left: '-10%',
+          width: '50vw',
+          height: '50vw',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(213, 221, 210, 0.35) 0%, rgba(245, 213, 213, 0.15) 50%, transparent 70%)',
+          filter: 'blur(65px)',
+          animation: 'bgFloatDrift3 24s ease-in-out infinite',
+        }} />
+
+        {/* Soft floating glow 4 - Bottom Right Blush/Cream */}
+        <div style={{
+          position: 'absolute',
+          bottom: '5%',
+          right: '-6%',
+          width: '52vw',
+          height: '52vw',
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(245, 213, 213, 0.40) 0%, rgba(230, 207, 160, 0.15) 50%, transparent 70%)',
+          filter: 'blur(55px)',
+          animation: 'bgFloatDrift1 28s ease-in-out infinite reverse',
+        }} />
+
+        {/* Tiny Bokeh Sparkle Lights */}
+        <div style={{
+          position: 'absolute',
+          top: '25%',
+          left: '20%',
+          width: '8px',
+          height: '8px',
+          borderRadius: '50%',
+          background: '#c9a96e',
+          boxShadow: '0 0 16px 6px rgba(201, 169, 110, 0.5)',
+          animation: 'pulseSparkle 4s ease-in-out infinite',
+        }} />
+        <div style={{
+          position: 'absolute',
+          top: '60%',
+          right: '25%',
+          width: '10px',
+          height: '10px',
+          borderRadius: '50%',
+          background: '#d4899a',
+          boxShadow: '0 0 20px 8px rgba(212, 137, 154, 0.5)',
+          animation: 'pulseSparkle 5s ease-in-out 1.5s infinite',
+        }} />
+        <div style={{
+          position: 'absolute',
+          bottom: '30%',
+          left: '35%',
+          width: '6px',
+          height: '6px',
+          borderRadius: '50%',
+          background: '#e6cfa0',
+          boxShadow: '0 0 14px 4px rgba(230, 207, 160, 0.6)',
+          animation: 'pulseSparkle 4.5s ease-in-out 2.5s infinite',
+        }} />
+      </div>
 
       {/* 🌸 Global Floating Flowers Layer (Lily & White Rose) */}
       {unlocked && (
