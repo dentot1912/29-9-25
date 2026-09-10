@@ -19,8 +19,8 @@ gsap.registerPlugin(ScrollTrigger);
    CONFIG
    ═══════════════════════════════════════════════════════════════════════════ */
 const BIRTHDAY_DATE = new Date('2026-07-03T00:00:00');
-const NAME = 'Noor Azlina';
-const SENDER_NAME = 'Seseorang di Masa Lalumu';
+const NAME = 'Sayang';
+const SENDER_NAME = 'Aku ❤️';
 
 /* ── Colors ── */
 const C = {
@@ -56,76 +56,76 @@ const IMG = {
 
 /* ── Data ── */
 const WISHES = [
-  { Icon: Smile, title: 'Endless Happiness', text: 'I wish you endless happiness.' },
-  { Icon: Sun, title: 'Good Health', text: 'I wish you good health every single day.' },
-  { Icon: Flower2, title: 'Allah’s Protection', text: 'I wish Allah always protects you wherever you go.' },
-  { Icon: Wind, title: 'Peace of Heart', text: 'I wish your heart always finds peace.' },
-  { Icon: Star, title: 'Stronger Faith', text: 'I wish your faith becomes stronger with every passing year.' },
-  { Icon: Sparkles, title: 'Answered Prayers', text: 'I wish all your prayers are heard and answered in the best way.' },
-  { Icon: Gem, title: 'Dreams Come True', text: 'I wish your dreams slowly turn into reality.' },
-  { Icon: Flame, title: 'Unshakeable Strength', text: 'I wish every difficulty you face makes you stronger.' },
-  { Icon: Flower2, title: 'Genuine Love', text: 'I wish you are surrounded by people who genuinely love you.' },
-  { Icon: Flower2, title: 'Beautiful Heart', text: 'I wish you never lose your kind and beautiful heart.' },
-  { Icon: Crown, title: 'Courage', text: 'I wish you always have the courage to choose yourself.' },
-  { Icon: Sun, title: 'Joy in Small Things', text: 'I wish you find happiness even in the smallest things.' },
-  { Icon: Star, title: 'Brighter Future', text: 'I wish your future is brighter than you could ever imagine.' },
-  { Icon: Compass, title: 'Steps Closer', text: 'I wish every step you take brings you closer to your dreams.' },
-  { Icon: Zap, title: 'Blessed with Strength', text: 'I wish you are always blessed with enough strength when life gets difficult.' },
-  { Icon: Sparkles, title: 'Best Version of You', text: 'I wish you continue growing into the best version of yourself.' },
-  { Icon: Flower2, title: 'Family Blessings', text: 'I wish your family is always blessed with health and happiness.' },
-  { Icon: Gem, title: 'Valuable & Deserving', text: 'I wish you never forget how valuable and deserving you are.' },
-  { Icon: Smile, title: 'Good People', text: 'I wish you meet people who bring goodness into your life.' },
-  { Icon: Moon, title: 'Protected Heart', text: 'I wish your heart is protected from anything that doesn’t deserve it.' },
-  { Icon: Camera, title: 'Unforgettable Moments', text: 'I wish you experience beautiful moments that you’ll remember forever.' },
-  { Icon: Sparkles, title: 'Hope & Excitement', text: 'I wish you always have something to look forward to.' },
-  { Icon: Gift, title: 'Unexpected Blessings', text: 'I wish this new chapter brings you unexpected blessings.' },
-  { Icon: Crown, title: 'The 24th Wish', text: 'And lastly, for your 24th wish, I wish that everything your heart has been quietly praying for finds its way to you, at the right time, in the most beautiful way possible.' },
+  { Icon: Smile, title: 'Kebahagiaan Abadi', text: 'Semoga setiap harimu selalu dipenuhi senyum manis dan tawa bahagia bersamaku.' },
+  { Icon: Sun, title: 'Kesehatan & Keselamatan', text: 'Semoga kamu selalu diberikan tubuh yang sehat, bugar, dan penuh semangat setiap hari.' },
+  { Icon: Flower2, title: 'Perlindungan Allah', text: 'Semoga Allah senantiasa menjagamu dan melindungimu ke mana pun langkahmu pergi.' },
+  { Icon: Wind, title: 'Kedamaian Hati', text: 'Semoga hatimu selalu tenang, damai, dan bebas dari segala rasa cemas maupun lelah.' },
+  { Icon: Star, title: 'Iman yang Semakin Kuat', text: 'Semoga keimanan dan ketaatanmu kepada Allah semakin bertambah indah seiring waktu.' },
+  { Icon: Sparkles, title: 'Doa-doa Terkabul', text: 'Semoga segala doa yang kau bisikkan dalam sujud didengar dan dikabulkan dengan cara terindah.' },
+  { Icon: Gem, title: 'Impian Jadi Kenyataan', text: 'Semoga satu per satu cita-cita dan impian besarmu terwujud dengan mudah dan lancar.' },
+  { Icon: Flame, title: 'Kekuatan Tanpa Batas', text: 'Semoga setiap tantangan yang hadir justru menjadikanmu wanita yang semakin tangguh dan hebat.' },
+  { Icon: Heart, title: 'Cinta yang Tulus', text: 'Semoga kamu selalu merasakan betapa dalamnya rasa sayang dan cinta tulusku untukmu.' },
+  { Icon: Flower2, title: 'Hati yang Lembut & Cantik', text: 'Semoga kebaikan, kelembutan, dan kemurnian hatimu yang memesona selalu terjaga.' },
+  { Icon: Crown, title: 'Keberanian Melangkah', text: 'Semoga kamu selalu percaya diri dan bangga atas dirimu yang begitu berharga.' },
+  { Icon: Sun, title: 'Bahagia dalam Hal Kecil', text: 'Semoga kamu selalu menemukan alasan manis untuk tersenyum bahkan dari hal-hal sederhana.' },
+  { Icon: Star, title: 'Masa Depan Cerah', text: 'Semoga masa depan kita berdua selalu terang, indah, dan penuh keberkahan.' },
+  { Icon: Compass, title: 'Langkah Menuju Cita', text: 'Semoga setiap langkah yang kau ambil membawamu semakin dekat dengan kesuksesan.' },
+  { Icon: Zap, title: 'Ketegaran Hati', text: 'Semoga kamu selalu dilimpahi ketabahan dan kekuatan saat menghadapi hari-hari yang berat.' },
+  { Icon: Sparkles, title: 'Versi Terbaik Dirimu', text: 'Semoga kamu terus tumbuh menjadi sosok bidadari yang semakin anggun dan membanggakan.' },
+  { Icon: Flower2, title: 'Berkah untuk Keluarga', text: 'Semoga keluargamu senantiasa diberikan kesehatan, kebahagiaan, dan limpahan rezeki.' },
+  { Icon: Gem, title: 'Selalu Merasa Berharga', text: 'Jangan pernah lupa bahwa kamu adalah anugerah terindah dan sangat berarti bagiku.' },
+  { Icon: Smile, title: 'Dikelilingi Kebaikan', text: 'Semoga kamu selalu dipertemukan dengan orang-orang baik dan penuh ketulusan.' },
+  { Icon: Moon, title: 'Hati yang Terjaga', text: 'Semoga hatimu selalu terjaga dari hal-hal yang dapat melukai dan meredupkan senyumanmu.' },
+  { Icon: Camera, title: 'Momen Indah Abadi', text: 'Semoga kita terus mengukir ribuan kenangan manis yang akan kita kenang bersama selamanya.' },
+  { Icon: Sparkles, title: 'Harapan & Semangat', text: 'Semoga hari-harimu selalu diwarnai antusiasme, harapan baru, dan kehangatan cinta.' },
+  { Icon: Gift, title: 'Kejutan Berkah Terindah', text: 'Semoga di usia 24 tahun ini, hidupmu dihujani kejutan-kejutan manis yang membahagiakan.' },
+  { Icon: Crown, title: 'Doa ke-24: Bersama Selamanya', text: 'Dan untuk doa ke-24, semoga semua harapan sucimu terwujud dan kita selalu bersama merajut cinta hingga ke surga-Nya.' },
 ];
 
 const MEMORIES = [
   {
     Icon: Camera,
-    label: "Polaroid Collection",
-    desc: "Kumpulan cetakan polaroid manis dari berbagai perjalanan dan momen kebersamaan kita.",
-    img: "images/kenangan/img1.jpeg",
+    label: "Photobooth Date",
+    desc: "Momen seru kita di photobooth, pamer hasil foto strip biru dengan senyum dan pose tergemas.",
+    img: "images/img1.jpeg",
+  },
+  {
+    Icon: Bike,
+    label: "Motoran Bareng",
+    desc: "Keliling jalanan berdua naik motor, menikmati angin sepoi-sepoi sambil pose lucu pakai helm.",
+    img: "images/img2.jpeg",
+  },
+  {
+    Icon: Smile,
+    label: "Kacamata Kembar",
+    desc: "Kompak pakai kacamata frame hitam dengan ekspresi konyol yang selalu sukses bikin ketawa tiap diingat.",
+    img: "images/img3.jpeg",
   },
   {
     Icon: Moon,
-    label: "City Lights Walk",
-    desc: "Potret manis di bawah hangatnya lampu malam kota, melangkah santai dan menikmati suasana.",
-    img: "images/kenangan/img2.jpeg",
+    label: "Night Stroll",
+    desc: "Jalan-jalan santai di bawah langit malam, ditemani senyuman manis dan pose gemasmu.",
+    img: "images/img4.jpeg",
   },
   {
     Icon: Coffee,
-    label: "Hillside Cafe Moments",
-    desc: "Suasana sejuk di Hillside Kokol, menikmati waktu santai dengan senyuman dan udara segar perbukitan.",
-    img: "images/kenangan/img3.jpeg",
+    label: "Momen Ceria Bersama",
+    desc: "Duduk bareng sambil ngobrol seru, senyum cerah dan tawa manismu selalu jadi energi terbaikku.",
+    img: "images/img5.jpeg",
   },
   {
-    Icon: Flower2,
-    label: "Hydrangea Garden",
-    desc: "Berjalan di antara indahnya bunga-bunga hydrangea dan alam hijau yang tenang.",
-    img: "images/kenangan/img4.jpeg",
-  },
-  {
-    Icon: Sparkles,
-    label: "Childhood Nostalgia",
-    desc: "Foto masa kecil penuh memori hangat dan senyuman polos bersama teman dan saudara.",
-    img: "images/kenangan/img5.png",
-  },
-  {
-    Icon: Sun,
-    label: "Tropical Palms & Sunshine",
-    desc: "Menikmati langit biru cerah dan rindangnya pohon kelapa sambil mengabadikan momen terindah.",
-    img: "images/kenangan/img6.jpeg",
+    Icon: Heart,
+    label: "Nyender Nyaman",
+    desc: "Rebahan dan nyender santai di sampingmu, tempat paling nyaman di dunia dengan sejuta kelucuan kita.",
+    img: "images/img6.jpeg",
   },
 ];
 
 const QUOTES = [
-  '"Mungkin kisah kita telah usai sebagai cerita, namun namamu akan senantiasa tersimpan rapi dalam setiap doa baikku."',
-  '"Terima kasih pernah menjadi bagian terindah dalam perjalanan hidup ini, meski kini takdir menuntun kita di jalan yang berbeda."',
-  '"Aku tidak lagi berharap kau kembali, aku hanya berdoa agar dunia selalu memperlakukanmu dengan penuh kelembutan dan kebahagiaan."',
-  '"Beberapa rasa tidak pernah benar-benar hilang, ia hanya menjelma menjadi rasa syukur karena pernah mengenalmu sedalam itu."',
+  '"Dalam jutaan manusia di bumi, hatiku selalu dan selamanya memilihmu sebagai rumah terindah untuk pulang."',
+  '"Mencintaimu adalah hal terindah dan paling membahagiakan dalam hidupku. Selamat ulang tahun, bidadari hatiku."',
+  '"Setiap detik bersamamu adalah bait puisi cinta yang tak pernah ingin kuakhiri. Terima kasih telah menyempurnakan duniaku."',
+  '"Tak peduli berapa banyak waktu berganti, rasa sayang dan cintaku padamu akan selalu mekar lebih indah di setiap detiknya."',
 ];
 
 const CONFETTI_COLORS = [C.blush, C.blushL, C.gold, C.goldL, C.sage, C.blushD];
@@ -548,8 +548,8 @@ function HeroSection({ onCelebrate, active = false }: { onCelebrate: () => void;
             maxWidth: 420, marginBottom: 32,
             fontFamily: SANS,
           }}>
-            Di hari bertambahnya usiamu ini, izinkan aku menyampaikan doa tulus dari kejauhan.
-            Meskipun langkah kita tak lagi seiring, segala kebaikan dan memori tentangmu akan selalu kuhormati.
+            Di hari yang paling istimewa ini, terima kasih telah hadir dan mewarnai duniaku dengan tawa serta cintamu.
+            Semoga setiap langkahmu selalu dipenuhi kebahagiaan bersamaku.
           </p>
 
           <div data-h="btns" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
@@ -557,7 +557,7 @@ function HeroSection({ onCelebrate, active = false }: { onCelebrate: () => void;
               <PartyPopper size={16} /> Rayakan Hari Ini
             </Btn>
             <Btn onClick={() => document.getElementById('letter')?.scrollIntoView({ behavior: 'smooth' })} primary={false}>
-              <Mail size={16} /> Baca Surat Tulusku
+              <Mail size={16} /> Baca Surat Cintaku
             </Btn>
           </div>
         </div>
@@ -870,17 +870,17 @@ function LetterSection() {
             <img src='images/surat.jpeg' alt="Love letter" className="img-cover" />
           </div>
           <div className="polaroid-caption" style={{ marginTop: 12 }}>
-            <h3 className="polaroid-title" style={{ fontSize: 15, marginBottom: 2 }}>Untaian Rasa & Doa</h3>
-            <p className="polaroid-desc" style={{ fontSize: 12 }}>Sebuah pesan tulus yang belum sempat terucap</p>
+            <h3 className="polaroid-title" style={{ fontSize: 15, marginBottom: 2 }}>Untaian Cinta & Doa</h3>
+            <p className="polaroid-desc" style={{ fontSize: 12 }}>Sebuah pesan cinta yang tertulis khusus untukmu</p>
           </div>
         </div>
 
         {/* ── Text side ── */}
         <div data-lt="text">
           <SectionLabel text="Dari Hati Terdalam" />
-          <SectionTitle>Sepucuk<br />Surat</SectionTitle>
+          <SectionTitle>Sepucuk Surat<br />Cinta</SectionTitle>
           <p style={{ marginTop: 16, fontSize: 15, lineHeight: 1.8, color: C.textM, marginBottom: 28, fontFamily: SANS }}>
-            Kutuliskan pesan ini dengan penuh rasa hormat, kerinduan yang tenang, dan doa-doa terbaik untukmu...
+            Kutuliskan pesan ini dengan seluruh rasa sayang, kehangatan, dan cinta yang tak pernah pudar untukmu...
           </p>
 
           {/*
@@ -1000,10 +1000,10 @@ function LetterSection() {
                     visibility: 'hidden', fontSize: 'clamp(18px, 3vw, 23px)', fontFamily: SERIF,
                     fontStyle: 'italic', fontWeight: 600, color: C.text, marginBottom: 6,
                     lineHeight: 1.3,
-                  }}>Teruntuk Noor Azlina 🌸</h3>
+                  }}>Teruntuk Sayang Tercinta 🌸</h3>
 
                   <p style={{ visibility: 'hidden', fontSize: 13, color: C.textL, fontFamily: SANS, marginBottom: 20, lineHeight: 1.6 }}>
-                    Sebuah pesan yang ditulis dengan seluruh hati...
+                    Sebuah pesan cinta yang ditulis dengan seluruh hati...
                   </p>
 
                   {/* Animated click hint */}
@@ -1054,13 +1054,13 @@ function LetterSection() {
                 <div data-letter-line style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
                   <Flower2 size={18} style={{ color: C.blush }} />
                   <p style={{ fontSize: 16, fontWeight: 600, fontFamily: SERIF, fontStyle: 'italic', color: C.blushD }}>
-                    Hey, you're 24 y.o woww!
+                    Selamat Ulang Tahun, Sayangku! ❤️
                   </p>
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 14, fontSize: 15, lineHeight: 1.95, color: C.textM, fontFamily: SANS }}>
                   <p data-letter-line>
-                    Happy birthday to one of the purest hearts I know.{" "}
+                    Selamat ulang tahun untuk orang paling spesial dalam hidupku dan pemilik hati yang paling tulus.{" "}
                     <Flower2
                       size={14}
                       style={{
@@ -1072,56 +1072,31 @@ function LetterSection() {
                   </p>
 
                   <p data-letter-line style={{ color: C.text }}>
-                    Happy birthday, happy celebration of another year filled with millions of
-                    prayers and wishes coming true, and happy growing older. Enjoy this new
-                    chapter of your life with lots of laughter, positivity, and happiness. May
-                    Allah always guide you, Alin. I hope you will always have wonderful days
-                    ahead, filled with love and happiness.
+                    Selamat bertambah usia, selamat merayakan lembaran baru yang penuh dengan jutaan doa, cinta, dan impian indah yang menjadi kenyataan. Nikmati setiap momen di babak baru hidupmu ini dengan penuh tawa, kebahagiaan, dan rasa syukur. Semoga Allah senantiasa melindungi dan membimbing setiap langkahmu, sayang. Aku berharap setiap hari yang kau lalui selalu dipenuhi kehangatan, senyuman, dan cinta tulusku yang tak pernah habis untukmu.
                   </p>
 
                   <p data-letter-line>
-                    May this new age make your faith and character even better. May you become
-                    more devoted in your worship, be blessed with a long and healthy life,
-                    always be a good daughter to your parents, and may every prayer, dream, and
-                    goal you have come true. May everything you wish for be made easier for you,
-                    aamiin. You have to become more mature than before, okay? Never get tired of
-                    improving yourself and becoming a better person. Keep fighting for
-                    everything you’re working towards, Alin. You can do it, I believe in you!
-                    Fightinggggg!! 🎇✨
+                    Semoga di usiamu yang baru ini, kamu semakin dekat dengan semua impianmu dan hatimu selalu diliputi kedamaian. Semoga kamu senantiasa dikaruniai kesehatan, umur yang berkah, dan kebahagiaan yang berlimpah. Kamu adalah inspirasi terbesarku, dan aku sangat bersyukur memilikimu di hidupku. Jangan pernah lelah menjadi sosok yang manis, penuh perhatian, dan luar biasa seperti dirimu sekarang. Teruslah bersinar, sayang. Aku akan selalu ada di sampingmu, mendukung dan mencintaimu di setiap langkah! ✨💖
                   </p>
 
                   <p data-letter-line style={{ color: C.text }}>
-                    Thank you for holding on and making it this far. I’m so proud of you, Alin,
-                    for doing your best just to be okay. I’m proud of you because I know the
-                    past days might have been difficult for you. I don’t know everything you’ve
-                    been through, but I truly believe you can get through all of it. I hope you
-                    will continue fighting for yourself even when no one else is there to do it
-                    for you. And I hope you know that you deserve every dream you have.
+                    Terima kasih telah menjadi dirimu yang apa adanya, dan terima kasih telah memilih untuk melangkah bersama mengarungi hidup ini. Aku sangat bangga padamu atas segala perjuangan dan hal-hal hebat yang telah kamu lakukan. Ketika hari-hari terasa berat, ingatlah bahwa kamu sangat dicintai, sangat berharga, dan kamu memiliki aku yang akan selalu percaya padamu serta siap menggenggam erat tanganmu.
                   </p>
 
                   <p data-letter-line>
-                    Today and every day, I only want to pray for the best for you and your
-                    family. May you always be healthy, always be under Allah’s protection, and
-                    always remain a good person. Never get tired of being a good person, okayyy?
-                    Keep it up, Alin.
+                    Setiap hari yang kulewati bersamamu adalah anugerah terindah yang selalu kusyukuri dengan segenap hatiku. Semoga Allah senantiasa memberkahi dirimu, keluargamu, dan perjalanan cinta kita dengan kebahagiaan dan keharmonisan yang abadi.
                   </p>
 
                   <p data-letter-line style={{ color: C.text }}>
-                    Keep being happy, Alin. If there is anything more beautiful than a blooming
-                    flower, perhaps it is your sweet smile. Thank you for giving me one of the
-                    best moments of my life on my birthday in Malaysia. That memory left such a
-                    deep impression on me, and I will never forget it for the rest of my life.
+                    Jika ada hal di dunia ini yang lebih memesona dari sekuntum bunga yang bermekaran, itu adalah senyuman manismu. Terima kasih atas setiap memori indah yang telah kita ukir bersama, dari awal pertemuan kita hingga saat-saat berharga di Malaysia. Semua kenangan itu terukir abadi di lubuk hatiku, dan aku tak sabar untuk merajut ribuan momen indah lainnya bersamamu.
                   </p>
 
                   <p data-letter-line>
-                    And if we are fortunate enough to meet again in heaven someday, I hope Allah
-                    grants you and your family Jannatul Firdaus. Please forgive me for all the
-                    mistakes I’ve made. I know I can never truly repay everything you have done
-                    for me, but I want you to know that I am incredibly grateful.
+                    Semoga Allah senantiasa meridhoi cinta dan kebersamaan kita hingga ke surga-Nya kelak (Jannatul Firdaus). Terima kasih atas segala cinta, kebaikan, dan ketulusanmu yang tiada tara.
                   </p>
 
                   <p data-letter-line style={{ color: C.text }}>
-                    Thank you so, so much. Mar
+                    Aku mencintaimu sepenuh hatiku, hari ini, esok, dan selamanya. ❤️
                   </p>
 
                   {/* Signature */}
@@ -1131,11 +1106,11 @@ function LetterSection() {
                     display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end',
                   }}>
                     <div>
-                      <p style={{ fontSize: 11, color: C.textL, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Dengan Segala Doa & Rasa Hormat,</p>
+                      <p style={{ fontSize: 11, color: C.textL, textTransform: 'uppercase', letterSpacing: '0.12em' }}>Dengan Seluruh Cintaku,</p>
                       <span style={{ fontFamily: SERIF, fontSize: '1.45em', fontStyle: 'italic', color: C.blushD, fontWeight: 600 }}>{SENDER_NAME}</span>
                     </div>
                     <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-                      {[Flower2, Sparkles, Flower2].map((Ic, i) => (
+                      {[Flower2, Heart, Flower2].map((Ic, i) => (
                         <Ic key={i} size={i === 1 ? 16 : 14}
                           style={{ color: C.blush, animation: `floatY ${2 + i * 0.4}s ease-in-out infinite` }} />
                       ))}
@@ -1219,13 +1194,13 @@ function MemoriesSection() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, marginBottom: 16 }}>
             <MiniLilyFlower size={28} />
             <div style={{ width: 34, height: 1.5, background: C.gold }} />
-            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: C.gold, fontFamily: SANS }}>Jejak Kenangan</span>
+            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: C.gold, fontFamily: SANS }}>Jejak Cerita Cinta</span>
             <div style={{ width: 34, height: 1.5, background: C.gold }} />
             <MiniLilyFlower size={28} />
           </div>
-          <SectionTitle center>Kepingan Masa Lalu</SectionTitle>
+          <SectionTitle center>Kisah Manis Kita</SectionTitle>
           <p style={{ marginTop: 14, fontSize: 15, color: C.textM, fontFamily: SANS, maxWidth: 460, margin: '14px auto 0', lineHeight: 1.6 }}>
-            Setiap detik yang pernah kita lewati kini menjadi bagian berharga dalam lembaran hidup yang selalu kusyukuri.
+            Setiap detik bersamamu adalah anugerah terindah yang selalu mewarnai hari-hariku dengan cinta dan kebahagiaan.
           </p>
         </div>
 
@@ -1429,9 +1404,9 @@ function WishesSection() {
             <div style={{ width: 34, height: 1.5, background: C.gold }} />
             <MiniLilyFlower size={28} />
           </div>
-          <SectionTitle center>24 Wishes for Your 24th</SectionTitle>
+          <SectionTitle center>24 Doa & Harapan Cinta</SectionTitle>
           <p style={{ marginTop: 14, fontSize: 15, color: C.textM, fontFamily: SANS, maxWidth: 520, margin: '14px auto 0', lineHeight: 1.6 }}>
-            Since you’re turning 24 today, here are 24 wishes for your 24th year of life:
+            Spesial di hari ulang tahunmu yang ke-24, ini 24 untaian doa dan harapan tulusku untukmu, sayang:
           </p>
         </div>
 
@@ -1442,7 +1417,7 @@ function WishesSection() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <Sparkles size={15} style={{ color: C.blush }} />
               <span style={{ fontSize: 13, fontWeight: 700, color: C.blushD, fontFamily: SANS }}>
-                Wish {activeIdx + 1} of {WISHES.length}
+                Doa ke-{activeIdx + 1} dari {WISHES.length}
               </span>
             </div>
 
@@ -1519,151 +1494,137 @@ function WishesSection() {
 
 /* ── Gallery data with span information for masonry feel ── */
 const GALLERY_ITEMS = [
-  // ── FIRST DATE / MEMORIES ──
   {
-    src: 'images/firstdate/img1.jpeg',
-    label: 'Senyummu', desc: 'Senyum pertama yang manis dari kamu di pertemuan pertama kita.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.38.jpeg',
+    label: 'Gelang Couple & Kopi',
+    desc: 'Duduk santai di kafe sambil pamer gelang couple bintang kita dan pose menggemaskan.',
+    Icon: Sparkles, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img2.jpeg',
-    label: 'First Meet', desc: 'Waktu kita masih sama-sama malu dan canggung, tapi bahagia.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
-  },
-  {
-    src: 'images/firstdate/video.mp4',
-    label: 'Video', desc: 'Pertama kali duduk berdua dan mendengarkan ceritamu.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
-  },
-  {
-    src: 'images/firstdate/img3.jpeg',
-    label: 'Our first picture on genshin', desc: 'Kenangan pertama kita di dunia game favorit.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
-  },
-  {
-    src: 'images/firstdate/img4.jpeg',
-    label: 'Tropical Vibes', desc: 'Foto cantik di antara deretan pohon kelapa dan langit biru.',
-    Icon: Sun, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
-  },
-  {
-    src: 'images/firstdate/img5.jpeg',
-    label: 'Gathering Together', desc: 'Momen kebersamaan hangat makan bareng dengan penuh tawa.',
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.38 (1).jpeg',
+    label: 'Filter Konyol & Tawa',
+    desc: 'Momen ngakak berdua main filter mata kartun, tawa lepas bersamamu selalu bikin hari lebih berwarna.',
     Icon: Smile, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img6.jpeg',
-    label: 'Hangout Time', desc: 'Duduk santai bareng dan menikmati obrolan seru hari itu.',
-    Icon: Coffee, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
-  },
-  {
-    src: 'images/firstdate/img7.jpeg',
-    label: 'Rumah Terbalik', desc: 'Jalan-jalan seru dan melihat spot unik rumah terbalik.',
-    Icon: Sparkles, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
-  },
-  {
-    src: 'images/firstdate/img8.jpeg',
-    label: 'Hillside Kokol', desc: 'Mirror selfie berdua di Hillside Kokol yang manis.',
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.38 (2).jpeg',
+    label: 'Mirror Selfie OOTD',
+    desc: 'Mirror selfie berdua di lorong dengan outfit senada, berdiri berdampingan dengan senyum termanis.',
     Icon: Camera, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img9.jpeg',
-    label: 'Sunset Chill', desc: 'Duduk santai di tepi pantai sambil menikmati senja sore.',
-    Icon: Sun, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.39.jpeg',
+    label: 'Pouty & Cute',
+    desc: 'Ekspresi cemberut gemas pakai kacamata transparan yang selalu sukses bikin luluh dan gemas.',
+    Icon: Heart, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img10.jpeg',
-    label: 'Beautiful Day', desc: 'Setiap sudut hari terasa istimewa saat dihabiskan bersamamu.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
-  },
-  {
-    src: 'images/firstdate/img11.jpeg',
-    label: 'Sweet Moments', desc: 'Momen manis yang selalu bikin senyum setiap kali diingat.',
-    Icon: Gem, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
-  },
-  {
-    src: 'images/firstdate/img12.jpeg',
-    label: 'Happy Smiles', desc: 'Tawa ceria dan senyuman yang menerangi hari-hariku.',
-    Icon: Smile, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
-  },
-  {
-    src: 'images/firstdate/img13.jpeg',
-    label: 'Peaceful Day', desc: 'Hari tenang penuh kedamaian dan kehangatan cerita kita.',
-    Icon: Wind, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
-  },
-  {
-    src: 'images/firstdate/img14.jpeg',
-    label: 'Together With You', desc: 'Berada di sampingmu adalah tempat ternyaman di dunia.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
-  },
-  {
-    src: 'images/firstdate/img15.jpeg',
-    label: 'Special Memories', desc: 'Potongan kenangan berharga yang tersimpan abadi.',
-    Icon: Star, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
-  },
-  {
-    src: 'images/firstdate/img16.jpeg',
-    label: 'Best Day Ever', desc: 'Hari penuh kebahagiaan yang tak akan pernah kulupakan.',
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.39 (1).jpeg',
+    label: 'Nostalgia Masa Sekolah',
+    desc: 'Foto kenangan refleksi jendela saat masih mengenakan seragam putih abu-abu dengan penuh cerita manis.',
     Icon: Sparkles, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img17.jpeg',
-    label: 'Candid Moments', desc: 'Momen-momen natural yang penuh kejujuran dan rasa sayang.',
-    Icon: Camera, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.45.jpeg',
+    label: 'Candid di Kafe',
+    desc: 'Momen candid saat kita duduk berdua mengobrol santai di sudut kafe favorit kita.',
+    Icon: Coffee, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img18.jpeg',
-    label: 'Cherished Times', desc: 'Setiap detik bersamamu selalu terasa begitu bermakna.',
-    Icon: Crown, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.46.jpeg',
+    label: 'Fisheye Studio Vintage',
+    desc: 'Mirror selfie estetik dengan lensa fisheye di studio bernuansa vintage yang hangat dan artistik.',
+    Icon: Camera, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img19.jpeg',
-    label: 'Precious Smile', desc: 'Senyuman manismu yang selalu meluluhkan hati.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.47.jpeg',
+    label: 'Pramuka Sweet Memories',
+    desc: 'Foto berdua mengenakan seragam pramuka di photobooth vintage dengan senyum tulus dan bangga.',
+    Icon: Heart, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img20.jpeg',
-    label: 'Our Story', desc: 'Halaman demi halaman kisah indah yang kita rajut bersama.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.50.jpeg',
+    label: 'Tatap Manis di Kafe',
+    desc: 'Momen manis saat kamu tersipu malu dan aku menatapmu dengan rasa kagum dan sayang yang begitu dalam.',
+    Icon: Coffee, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img21.jpeg',
-    label: 'Little Things', desc: 'Hal-hal kecil yang selalu membuat hati ini terasa penuh.',
-    Icon: Gem, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.53.jpeg',
+    label: 'Night Ride Berdua',
+    desc: 'Menikmati sejuknya angin malam saat motoran berdua menyusuri jalanan kota yang tenang.',
+    Icon: Moon, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img22.jpeg',
-    label: 'Endless Journey', desc: '',
-    Icon: Compass, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.53 (1).jpeg',
+    label: 'Menunggu Hasil Foto',
+    desc: 'Menanti hasil cetak photobooth dengan antusias, mengabadikan setiap frame kebersamaan kita.',
+    Icon: Camera, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img23.jpeg',
-    label: 'Pure Happiness', desc: 'Kebahagiaan sederhana yang selalu terasa istimewa bersamamu.',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.54.jpeg',
+    label: 'Malam di Taman Kota',
+    desc: 'Berdiri bersama di bawah rindangnya pohon taman kota di malam hari, penuh canda dan kehangatan.',
+    Icon: Moon, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img24.jpeg',
-    label: 'Warm Memories', desc: 'Hangatnya setiap kebersamaan yang tak pernah pudar.',
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.54 (1).jpeg',
+    label: 'Konser Malam Kita',
+    desc: 'Menikmati gemerlap panggung konser malam hari bersama, bernyanyi dan larut dalam lantunan musik indah.',
     Icon: Sparkles, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img25.jpeg',
-    label: 'Joyful Moments', desc: 'Tawa dan senyum ceria yang selalu mewarnai hari-hari kita.',
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.55.jpeg',
+    label: 'Pose Lucu Berdua',
+    desc: 'Selfie santai dengan pose tangan di dagu dan senyuman manis berhijab putih yang selalu meneduhkan.',
     Icon: Smile, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/img26.jpeg',
-    label: 'Always Together', desc: 'Menghabiskan waktu denganmu selalu jadi hal terindah.',
-    Icon: Gem, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.55 (1).jpeg',
+    label: 'Gaya Konyol Bersama',
+    desc: 'Pose gaya metal dan lidah melet yang kocak, bukti bahwa kita selalu bebas jadi diri sendiri saat berdua.',
+    Icon: Smile, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
   },
   {
-    src: 'images/firstdate/img27.jpeg',
-    label: 'Forever Love', desc: '',
-    Icon: Flower2, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.55 (2).jpeg',
+    label: 'Helm & Jalanan',
+    desc: 'Selfie di atas motor lengkap dengan helm, menikmati perjalanan panjang berdua di bawah langit terbuka.',
+    Icon: Heart, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
   {
-    src: 'images/firstdate/video2.mp4',
-    label: 'Cherished Video', desc: 'Rekaman video manis yang menyimpan tawa dan suara kita berdua.',
-    Icon: Play, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.56.jpeg',
+    label: 'Kaca Spion Momen',
+    desc: 'Potret estetik dari sudut pandang spion motor, mengabadikan ekspresi seru kita di tengah perjalanan.',
+    Icon: Camera, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+  },
+  {
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.56 (1).jpeg',
+    label: 'Peace & Kedipan Manis',
+    desc: 'Kompak berpose peace dengan kedipan mata centil dan kacamata hitam yang penuh pesona.',
+    Icon: Smile, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+  },
+  {
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.57.jpeg',
+    label: 'Gokil Bareng',
+    desc: 'Pose lidah melet dan senyum lebar penuh ekspresi gokil yang tak pernah gagal mengukir tawa.',
+    Icon: Smile, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+  },
+  {
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.57 (1).jpeg',
+    label: 'Bisikan Rahasia Kita',
+    desc: 'Momen manis saling berbisik rahasia kecil sambil menahan tawa bahagia di antara kita berdua.',
+    Icon: Heart, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
+  },
+  {
+    src: 'memories/WhatsApp Image 2026-09-10 at 20.08.57 (2).jpeg',
+    label: 'Nyender Penuh Kasih',
+    desc: 'Menyandarkan kepala dengan senyum hangat dan teduh, merasakan ketenangan dan kenyamanan sejati.',
+    Icon: Heart, accent: '#d4899a', tag: 'Memories', rowSpan: 2,
+  },
+  {
+    src: 'memories/WhatsApp Video 2026-09-10 at 20.08.55.mp4',
+    label: 'Video Kenangan Spesial',
+    desc: 'Klip rekaman video manis yang mengabadikan tawa ceria dan kebersamaan hangat kita yang tak terlupakan.',
+    Icon: Play, accent: '#d4899a', tag: 'Memories', rowSpan: 1,
   },
 ];
 
@@ -1672,7 +1633,7 @@ const GALLERY_TAGS = [
 ];
 
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
-  'Memories': 'i’m so happy bisa bertemu kamu',
+  'Memories': 'Setiap senyumanmu adalah bahagiaku, dan setiap momen bersamamu adalah anugerah terindah.',
 };
 
 /* ── Thumbnail (memoized) ── */
@@ -2163,75 +2124,6 @@ function GallerySection() {
               );
             })}
           </div>
-
-          {/* 📸 Bonus Polaroid Note: itsme.jpeg */}
-          <div style={{
-            marginTop: 56,
-            display: 'flex',
-            justifyContent: 'center',
-            width: '100%',
-            padding: '0 16px',
-          }}>
-            <div
-              style={{
-                background: '#ffffff',
-                padding: '16px 16px 22px',
-                borderRadius: 20,
-                boxShadow: '0 16px 36px rgba(45, 31, 20, 0.12), 0 2px 8px rgba(45, 31, 20, 0.06)',
-                border: '1px solid rgba(232, 223, 211, 0.8)',
-                maxWidth: 340,
-                width: '100%',
-                textAlign: 'center',
-                transform: 'rotate(-2deg)',
-                transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                cursor: 'default',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'rotate(0deg) scale(1.03) translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 24px 48px rgba(168, 79, 101, 0.2), 0 6px 16px rgba(45, 31, 20, 0.08)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'rotate(-2deg) scale(1) translateY(0px)';
-                e.currentTarget.style.boxShadow = '0 16px 36px rgba(45, 31, 20, 0.12), 0 2px 8px rgba(45, 31, 20, 0.06)';
-              }}
-            >
-              {/* Polaroid Frame Photo */}
-              <div style={{
-                position: 'relative',
-                width: '100%',
-                borderRadius: 14,
-                overflow: 'hidden',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-                marginBottom: 16,
-                background: '#f5ede4',
-              }}>
-                <img
-                  src="/images/itsme.jpeg"
-                  alt="Selfie edit surat"
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    maxHeight: 380,
-                    objectFit: 'cover',
-                    display: 'block',
-                  }}
-                />
-              </div>
-
-              {/* Sweet Caption */}
-              <p style={{
-                fontFamily: HANDWRITING,
-                fontSize: 19,
-                color: '#6b3040',
-                lineHeight: 1.45,
-                margin: 0,
-                padding: '0 4px',
-              }}>
-                Heheh selfie sedikit ketika edit untuk surat kamu, bahagia selalu ya! ✨🤍
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -2525,7 +2417,7 @@ function FinalSection({
     }}>
       {/* Background photo */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-        <img src='images/kenangan/img5.png' alt="Couple sunset" style={{
+        <img src='images/footer.jpeg' alt="Couple sunset" style={{
           width: '100%', height: '100%', objectFit: 'cover', display: 'block',
           animation: 'kenBurns 25s ease-in-out infinite',
         }} />
@@ -2571,12 +2463,12 @@ function FinalSection({
 
         <div style={{ width: 60, height: 1.5, background: 'rgba(255,255,255,0.3)', margin: '0 auto 24px' }} data-f="text" />
 
-        <p data-f="text" style={{ fontSize: 17, lineHeight: 1.85, color: 'rgba(255,255,255,0.85)', maxWidth: 520, margin: '0 auto 12px', fontFamily: SANS }}>
-          "bahkan,untuk jatuh suka padamu saja aku meminta maaf, bukan karna kau menakutkan, hanya saja aku terlalu enggan untuk mendekat, merasa bahwa kadang dari jauh juga lebih baik, kadang mengagumi seseorang,tidak perlu sampai dia tau,bagaimana cara kita jatuh suka,bukan?, jadi biarkan aku disini mengawasi dan menanti sampai magismu berhenti memikat dan memabukanku, rasanya kurang pantas bila insan sepertiku, bersanding dengan manusia yang mudah untuk di kagumi,sepertimu."
+        <p data-f="text" style={{ fontSize: 17, lineHeight: 1.85, color: 'rgba(255,255,255,0.92)', maxWidth: 540, margin: '0 auto 12px', fontFamily: SANS }}>
+          "Terima kasih telah hadir dalam hidupku, membawa kehangatan, dan menjadi alasan terbesar di balik setiap senyumanku."
         </p>
 
         <div data-f="text" style={{ display: 'flex', justifyContent: 'center', gap: 14, marginBottom: 32 }}>
-          {[Flower2, Star, Gem, Star, Flower2].map((Ic, i) => (
+          {[Flower2, Heart, Gem, Heart, Flower2].map((Ic, i) => (
             <Ic key={i} size={i === 2 ? 22 : 18} style={{
               color: 'rgba(255,255,255,0.85)',
               animation: `floatY ${2 + i * 0.2}s ease-in-out ${i * 0.1}s infinite`,
@@ -2584,16 +2476,8 @@ function FinalSection({
           ))}
         </div>
 
-        {/* 🎙️ Voice Note Player (Audio ucapan.mp4) */}
-        <div data-f="cta" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <VoiceNotePlayer
-            onCelebrate={onCelebrate}
-            onPlayStateChange={onVoiceStateChange}
-          />
-        </div>
-
-        <p style={{ marginTop: 36, fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 600, fontFamily: SANS, letterSpacing: '0.06em' }}>
-          Disampaikan dengan ketulusan & rasa hormat <Flower2 size={13} style={{ color: '#f5d5d5', display: 'inline', verticalAlign: 'middle' }} />
+        <p style={{ marginTop: 36, fontSize: 12, color: 'rgba(255,255,255,0.85)', fontWeight: 600, fontFamily: SANS, letterSpacing: '0.06em' }}>
+          Dipersembahkan dengan segenap cinta & ketulusan hati <Heart size={13} style={{ color: '#ff8fa3', fill: '#ff8fa3', display: 'inline', verticalAlign: 'middle' }} />
         </p>
       </div>
     </section>
@@ -2604,7 +2488,7 @@ function FinalSection({
    PIN LOCK SCREEN — Secret Birthday Gate with Flower Blooming Scene
    ═══════════════════════════════════════════════════════════════════════════ */
 
-const SECRET_PIN = '22222';
+const SECRET_PIN = '29925';
 
 function PinLockScreen({ onUnlock, onBlooming }: { onUnlock: () => void; onBlooming: () => void }) {
   const [pin, setPin] = useState('');
@@ -2702,8 +2586,6 @@ function PinLockScreen({ onUnlock, onBlooming }: { onUnlock: () => void; onBloom
       <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '50vw', height: '50vw', borderRadius: '50%', background: `radial-gradient(circle, ${C.blushL}40, transparent 70%)`, filter: 'blur(50px)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-10%', left: '-10%', width: '45vw', height: '45vw', borderRadius: '50%', background: `radial-gradient(circle, ${C.goldL}35, transparent 70%)`, filter: 'blur(50px)', pointerEvents: 'none' }} />
 
-
-
       <div
         ref={lockRef}
         style={{
@@ -2752,19 +2634,9 @@ function PinLockScreen({ onUnlock, onBlooming }: { onUnlock: () => void; onBloom
           color: C.text,
           marginBottom: 6,
         }}>
-          {success ? 'Akses Diterima' : 'Special Birthday Surprise'}
+          {success ? 'Akses Diterima ❤️' : 'Special Birthday Surprise'}
         </h2>
 
-        <p style={{
-          fontSize: 13,
-          color: error ? '#d32f2f' : C.textM,
-          fontFamily: SANS,
-          transition: 'color 0.2s ease',
-        }}>
-          {success
-            ? 'Membuka kenangan indah kita...'
-            : (error ? 'PIN salah! Coba lagi ya' : 'Masukkan 5 digit PIN untuk membuka surat')}
-        </p>
         <p style={{
           fontSize: 13,
           color: error ? '#d32f2f' : C.textM,
@@ -2772,7 +2644,9 @@ function PinLockScreen({ onUnlock, onBlooming }: { onUnlock: () => void; onBloom
           marginBottom: 26,
           transition: 'color 0.2s ease',
         }}>
-          ( Hint: 222222 )
+          {success
+            ? 'Membuka kejutan cinta spesial untukmu...'
+            : (error ? 'PIN salah! Coba lagi ya sayang' : 'Masukkan 5 digit PIN untuk membuka surat cintamu')}
         </p>
 
         {/* 5 Digit Indicators */}
@@ -2906,34 +2780,28 @@ function PinLockScreen({ onUnlock, onBlooming }: { onUnlock: () => void; onBloom
    ═══════════════════════════════════════════════════════════════════════════ */
 
 function LilyBloomOverlay() {
-  // 120 interlocking Lily flowers creating a seamless blooming & falling blanket
+  // Lightweight, smooth 24 golden-ratio Lily flowers for instant 60fps rendering
   const blossoms = useMemo(() => {
-    const count = 120;
+    const count = 24;
     return Array.from({ length: count }, (_, i) => {
-      // Golden Spiral angle (Phyllotaxis)
       const goldenAngle = 137.507764;
       const angle = i * goldenAngle;
       const rad = (angle * Math.PI) / 180;
-      
-      // Radial distance from center outward
-      const norm = Math.pow(i / count, 0.65);
-      const dist = 3.5 + norm * 62; // 3.5vw at center to 65vw at screen edges
-      
-      const tx = Math.round(Math.cos(rad) * dist * 1.2 * 10) / 10;
+
+      const norm = Math.pow(i / count, 0.7);
+      const dist = 6 + norm * 50;
+
+      const tx = Math.round(Math.cos(rad) * dist * 1.15 * 10) / 10;
       const ty = Math.round(Math.sin(rad) * dist * 10) / 10;
 
-      // Silky smooth staggered delay from 0s to 1.8s
-      const delay = Math.round((Math.pow(i / (count - 1), 1.25) * 1.8) * 100) / 100;
-      
-      // Fall down drift offsets & speeds
-      const fallDrift = Math.round(((i % 2 === 0 ? 1 : -1) * (15 + (i % 7) * 8)));
-      const fallRotate = (i % 2 === 0 ? 1 : -1) * (160 + (i % 5) * 50);
-      
-      // Dense overlapping sizes (80px - 145px)
-      const size = Math.round(80 + (i % 5) * 12 + (1 - norm) * 25);
-      const rot = Math.round((i * 43) % 360);
+      const delay = Math.round((Math.pow(i / (count - 1), 1.1) * 1.2) * 100) / 100;
+      const fallDrift = Math.round(((i % 2 === 0 ? 1 : -1) * (20 + (i % 5) * 12)));
+      const fallRotate = (i % 2 === 0 ? 1 : -1) * (140 + (i % 4) * 40);
 
-      return { tx, ty, delay, size, rot, fallDrift, fallRotate, id: i, zIndex: Math.floor(i / 4) + 10 };
+      const size = Math.round(75 + (i % 4) * 16);
+      const rot = Math.round((i * 47) % 360);
+
+      return { tx, ty, delay, size, rot, fallDrift, fallRotate, id: i, zIndex: i + 10 };
     });
   }, []);
 
@@ -2952,11 +2820,11 @@ function LilyBloomOverlay() {
         @keyframes motherLilySequence {
           0% {
             opacity: 0;
-            transform: translate(-50%, -50%) scale(0.2) rotate(-30deg);
+            transform: translate3d(-50%, -50%, 0) scale(0.2) rotate(-25deg);
           }
           18% {
             opacity: 1;
-            transform: translate(-50%, -50%) scale(1.08) rotate(5deg);
+            transform: translate3d(-50%, -50%, 0) scale(1.06) rotate(4deg);
           }
           32% {
             transform: translate(-50%, -50%) scale(1) rotate(0deg);
@@ -3023,14 +2891,15 @@ function LilyBloomOverlay() {
           height: 140,
           zIndex: 8,
           animation: 'motherLilySequence 4.5s cubic-bezier(0.2, 0.9, 0.3, 1) forwards',
+          willChange: 'transform, opacity',
         }}
       >
-        <div style={{ width: '100%', height: '100%', filter: 'drop-shadow(0 8px 24px rgba(212, 137, 154, 0.6))' }}>
+        <div style={{ width: '100%', height: '100%' }}>
           <MiniLilyFlower size={140} />
         </div>
       </div>
 
-      {/* 120 interlocking Lily flowers */}
+      {/* 24 optimized Lily flowers */}
       {blossoms.map((b) => (
         <div
           key={b.id}
@@ -3042,13 +2911,14 @@ function LilyBloomOverlay() {
             height: b.size,
             zIndex: b.zIndex,
             animation: `smoothBloomAndFall 4.5s cubic-bezier(0.2, 0.85, 0.3, 1) ${b.delay}s both`,
+            willChange: 'transform, opacity',
             '--dx': `${b.tx}vw`,
             '--dy': `${b.ty}vh`,
             '--fdrift': `${b.fallDrift}px`,
             '--frot': `${b.fallRotate}deg`,
           } as React.CSSProperties}
         >
-          <div style={{ width: '100%', height: '100%', transform: `rotate(${b.rot}deg)`, filter: 'drop-shadow(0 6px 14px rgba(212, 137, 154, 0.35))' }}>
+          <div style={{ width: '100%', height: '100%', transform: `rotate(${b.rot}deg)` }}>
             <MiniLilyFlower size={b.size} />
           </div>
         </div>
@@ -3077,7 +2947,7 @@ export default function BirthdayPage() {
   // Play background music on unlock
   const startBacksound = () => {
     if (!audioRef.current) {
-      const audio = new Audio('/images/backsound.mp3');
+      const audio = new Audio('/images/music.mp3');
       audio.loop = true;
       audio.crossOrigin = 'anonymous';
       audio.volume = 0.55;
@@ -3312,193 +3182,6 @@ export default function BirthdayPage() {
           </div>
         </div>
       )}
-
-      {/* 🖼️ Dynamic Combined Background Layer (bg1 - bg7) */}
-      <div
-        style={{
-          position: 'fixed',
-          inset: 0,
-          zIndex: 0,
-          pointerEvents: 'none',
-          overflow: 'hidden',
-        }}
-      >
-        {/* Layer 1: Base Canvas Watercolor Lily (bg1) with soft ambient pulse */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            backgroundImage: 'url(/images/background/bg1.jpeg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            opacity: 0.30,
-            filter: 'saturate(1.1) brightness(1.02)',
-            animation: 'bgCrossFade1 14s ease-in-out infinite alternate',
-          }}
-        />
-
-        {/* Layer 2: Subtle Pixel Garden Lily (bg7) layered on top */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            backgroundImage: 'url(/images/background/bg7.jpeg)',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center 40%',
-            backgroundRepeat: 'no-repeat',
-            opacity: 0.12,
-            mixBlendMode: 'multiply',
-            animation: 'bgCrossFade2 16s ease-in-out infinite alternate',
-          }}
-        />
-
-        {/* Layer 3: Floating Floral Accents from bg1 to bg7 placed elegantly around page edges */}
-        {/* Top-Left Cluster: Pastel Pixel Bouquet (bg6) & Forget-Me-Not (bg2) */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '2%',
-            left: '-2%',
-            width: 'clamp(140px, 20vw, 240px)',
-            opacity: 0.38,
-            animation: 'bgFloatDrift1 12s ease-in-out infinite',
-            filter: 'drop-shadow(0 8px 24px rgba(212,137,154,0.25))',
-          }}
-        >
-          <img src="/images/background/bg6.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            top: '16%',
-            left: '4%',
-            width: 'clamp(70px, 9vw, 110px)',
-            opacity: 0.42,
-            animation: 'bgFloatDrift2 10s ease-in-out 1s infinite',
-            filter: 'drop-shadow(0 6px 16px rgba(100,149,237,0.2))',
-          }}
-        >
-          <img src="/images/background/bg2.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-
-        {/* Top-Right Cluster: Pink Star Lily (bg3) & Stalk Lily (bg5) */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '4%',
-            right: '-1%',
-            width: 'clamp(130px, 18vw, 220px)',
-            opacity: 0.35,
-            animation: 'bgFloatDrift2 15s ease-in-out infinite',
-            filter: 'drop-shadow(0 8px 20px rgba(212,137,154,0.2))',
-          }}
-        >
-          <img src="/images/background/bg3.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            top: '22%',
-            right: '5%',
-            width: 'clamp(75px, 10vw, 120px)',
-            opacity: 0.38,
-            animation: 'bgFloatDrift3 11s ease-in-out 2s infinite',
-            filter: 'drop-shadow(0 6px 14px rgba(201,169,110,0.2))',
-          }}
-        >
-          <img src="/images/background/bg5.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-
-        {/* Mid-Screen Accents: Blossom (bg4) on left & Soft Bloom (bg7) on right */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '45%',
-            left: '1%',
-            width: 'clamp(80px, 11vw, 130px)',
-            opacity: 0.32,
-            animation: 'bgFloatDrift3 14s ease-in-out 0.5s infinite',
-            filter: 'drop-shadow(0 6px 16px rgba(212,137,154,0.2))',
-          }}
-        >
-          <img src="/images/background/bg4.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            top: '52%',
-            right: '2%',
-            width: 'clamp(85px, 12vw, 140px)',
-            opacity: 0.30,
-            animation: 'bgFloatDrift1 13s ease-in-out 3s infinite',
-            filter: 'drop-shadow(0 6px 16px rgba(212,137,154,0.18))',
-          }}
-        >
-          <img src="/images/background/bg7.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-
-        {/* Bottom Clusters: Bouquet (bg6), Blue Blossom (bg2), Pink Lily (bg3), Stem Lily (bg5), Peach Lily (bg4) */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '4%',
-            left: '-1%',
-            width: 'clamp(120px, 17vw, 210px)',
-            opacity: 0.35,
-            animation: 'bgFloatDrift2 16s ease-in-out 1.5s infinite',
-            filter: 'drop-shadow(0 8px 24px rgba(212,137,154,0.2))',
-          }}
-        >
-          <img src="/images/background/bg5.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '18%',
-            left: '4%',
-            width: 'clamp(70px, 9vw, 110px)',
-            opacity: 0.36,
-            animation: 'bgFloatDrift1 11s ease-in-out 2.5s infinite',
-          }}
-        >
-          <img src="/images/background/bg4.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '3%',
-            right: '-1%',
-            width: 'clamp(140px, 19vw, 230px)',
-            opacity: 0.38,
-            animation: 'bgFloatDrift1 14s ease-in-out 1s infinite',
-            filter: 'drop-shadow(0 8px 24px rgba(212,137,154,0.25))',
-          }}
-        >
-          <img src="/images/background/bg6.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '15%',
-            right: '5%',
-            width: 'clamp(65px, 8.5vw, 105px)',
-            opacity: 0.40,
-            animation: 'bgFloatDrift3 12s ease-in-out 3.5s infinite',
-          }}
-        >
-          <img src="/images/background/bg2.jpeg" alt="" style={{ width: '100%', height: 'auto', display: 'block' }} />
-        </div>
-
-        {/* Soft Ambient Warm Editorial Gradient Wash for Legibility & Romance */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'linear-gradient(to bottom, rgba(250,246,241,0.55) 0%, rgba(250,246,241,0.65) 50%, rgba(250,246,241,0.58) 100%)',
-          }}
-        />
-      </div>
 
       <main
         style={{
